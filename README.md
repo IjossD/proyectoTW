@@ -23,7 +23,7 @@
 
 <br/><br/>
 
-> ### ⚡ Prototipo de aplicación web de salud y fitness — 100% HTML + CSS vanilla, sin frameworks, sin dependencias.
+> ### ⚡ Prototipo de aplicación web de salud y fitness.
 
 <br/>
 
@@ -52,7 +52,7 @@
 ```
 ╔══════════════════════════════════════════════════════════════╗
 ║                                                              ║
-║   🔥  Calorías      ⚡  Pasos        ❤️  BPM        🎯  Metas  ║
+║   🔥  Calorías   ⚡  Pasos         ❤️  BPM      🎯  Metas  ║
 ║   2,847 kcal        11,234           72 bpm         8/10     ║
 ║                                                              ║
 ╚══════════════════════════════════════════════════════════════╝
@@ -60,70 +60,12 @@
 
 </div>
 
-- 🎨 **Diseño moderno** — gradientes purple→pink, glassmorphism y blobs animados
-- 📐 **CSS Architecture** — `global.css` compartido + un CSS por página
-- 📊 **Charts nativos** — gráfico de línea + donut chart hechos con SVG puro
-- 🏃 **4 páginas completas** — Login · Registro · Dashboard · About Us
-- 🔗 **Navegación HTML** — todas las páginas interconectadas con `<a href>`
-- 🎯 **Goal tags interactivos** — toggle con JavaScript vanilla
-- 💜 **Variables CSS** — design tokens centralizados en `:root`
-- 📱 **Sin dependencias** — cero npm, cero bundlers, cero frameworks
-
----
 
 
 ---
 
-## 🚀 Inicio Rápido
 
-### Opción A — Abrir directo en el navegador
 
-```bash
-# 1. Clona el repositorio
-git clone https://github.com/tu-usuario/fittrack.git
-
-# 2. Entra al directorio
-cd fittrack
-
-# 3. Abre la página de login
-open login.html        # macOS
-start login.html       # Windows
-xdg-open login.html    # Linux
-```
-
-### Opción B — Con un servidor local (recomendado)
-
-```bash
-# Con Python
-python -m http.server 3000
-
-# Con Node.js / npx
-npx serve .
-
-# Con VS Code
-# Instala "Live Server" y haz clic en "Go Live"
-```
-
-Luego abre `http://localhost:3000/login.html` 🎉
-
----
-
-## 🗺️ Flujo de Navegación
-
-```
-┌─────────────┐     ✅ Login exitoso      ┌───────────────┐
-│  login.html │ ─────────────────────────▶│ dashboard.html│
-└─────────────┘                           └───────────────┘
-       │                                         │
-       │ No tienes cuenta?                       │ About Us (sidebar)
-       ▼                                         ▼
-┌──────────────┐    ✅ Registro exitoso   ┌──────────────┐
-│register.html │ ──────────────────────▶ │  about.html  │
-└──────────────┘                          └──────────────┘
-       ▲                                         │
-       └─────────────────────────────────────────┘
-                      Registrarse (nav)
-```
 
 ---
 
@@ -159,65 +101,6 @@ Luego abre `http://localhost:3000/login.html` 🎉
 
 ---
 
-## 📄 Páginas en Detalle
-
-### 🔐 Login — `login.html` + `css/login.css`
-
-- Layout 50/50: panel artístico izquierdo + formulario derecho
-- Mini-stats animadas sobre el gradiente
-- Blobs flotantes con `@keyframes float`
-- Checkbox "Recuérdame" + link "¿Olvidaste tu contraseña?"
-
-### 📝 Registro — `register.html` + `css/register.css`
-
-- Indicador de progreso de 3 pasos
-- Grid 2 columnas para campos cortos
-- Goal tags interactivos (toggle `.active` con JS)
-- Selector de género + checkbox de términos
-
-### 📊 Dashboard — `dashboard.html` + `css/dashboard.css`
-
-- Sidebar fija de 220px con navegación completa
-- Topbar con buscador + avatar de usuario
-- 4 stat cards con badges de variación (+/-)
-- **Gráfico de línea** SVG con gradiente de área
-- **Donut chart** SVG con 4 segmentos (Cardio/Fuerza/Yoga/Descanso)
-- Gráfico de barras de pasos diarios
-- Card de logros con progress bars animadas
-
-### ℹ️ About Us — `about.html` + `css/about.css`
-
-- Hero con texto en gradiente clip
-- Strip de estadísticas (500K+ usuarios, 48 países…)
-- Sección de misión en layout 2 columnas
-- Grid de 3 tarjetas de equipo con avatar
-- Grid de 4 valores de empresa
-- CTA final con botón call-to-action
-
----
-
-## 🧩 Componentes Reutilizables
-
-Definidos en `css/global.css` y disponibles en todas las páginas:
-
-```css
-/* Variables */
-:root { --purple: #a855f7; --grad: linear-gradient(...); }
-
-/* Botón principal */
-.btn-main { background: var(--grad); border-radius: 12px; ... }
-
-/* Campos de formulario */
-.field input:focus { border-color: var(--purple); box-shadow: ...; }
-
-/* Blobs animados */
-.bg-blob { animation: float 6s ease-in-out infinite; }
-
-/* Logo compartido */
-.logo, .nav-logo { font-family: 'Nunito'; font-weight: 900; }
-```
-
----
 
 ## 🤝 Contribuir
 
@@ -261,7 +144,6 @@ git push origin feature/nueva-pagina
 
 </div>
 
-**Sin frameworks. Sin bundlers. Sin node_modules.** Solo el navegador. 🏆
 
 ---
 
