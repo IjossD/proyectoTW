@@ -71,23 +71,6 @@
 
 ---
 
-## 📁 Estructura del Proyecto
-
-```
-fittrack/
-│
-├── 📄 login.html          ← Pantalla de inicio de sesión
-├── 📄 register.html       ← Formulario de registro (3 pasos)
-├── 📄 dashboard.html      ← Panel principal con métricas
-├── 📄 about.html          ← Landing page / About Us
-│
-└── 📂 css/
-    ├── 🎨 global.css      ← Variables, reset, componentes compartidos
-    ├── 🎨 login.css       ← Layout split + art panel
-    ├── 🎨 register.css    ← Steps, goal tags, grid forms
-    ├── 🎨 dashboard.css   ← Sidebar, topbar, charts, stat cards
-    └── 🎨 about.css       ← Hero, stats strip, team, values, CTA
-```
 
 ---
 
