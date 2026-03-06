@@ -60,12 +60,28 @@
 
 </div>
 
-
+- 🎨 Diseño moderno con gradientes, glassmorphism y blobs animados
+- 📊 Charts nativos con SVG puro — sin librerías externas
+- 🔗 Navegación HTML entre las 4 páginas del prototipo
+- 💜 Design tokens centralizados con variables CSS
+- ⚡ Sin dependencias — cero npm, cero frameworks
 
 ---
 
+## 🚀 Inicio Rápido
 
+```bash
+git clone https://github.com/tu-usuario/fittrack.git
+cd fittrack
+open login.html
+```
 
+O usa un servidor local:
+
+```bash
+npx serve .
+# → http://localhost:3000/login.html
+```
 
 ---
 
@@ -101,23 +117,14 @@
 
 ---
 
-
 ## 🤝 Contribuir
 
 ¡Las contribuciones son bienvenidas! 🎉
 
 ```bash
-# 1. Fork el repositorio
-# 2. Crea tu rama
 git checkout -b feature/nueva-pagina
-
-# 3. Commitea tus cambios
 git commit -m "✨ feat: añadir página de perfil"
-
-# 4. Push a tu rama
 git push origin feature/nueva-pagina
-
-# 5. Abre un Pull Request
 ```
 
 ### Ideas para contribuir
@@ -143,7 +150,6 @@ git push origin feature/nueva-pagina
 <img src="https://img.shields.io/badge/SVG-FFB13B?style=for-the-badge&logo=svg&logoColor=black"/>
 
 </div>
-
 
 ---
 
