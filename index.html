@@ -1,104 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trabajo en clase</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trabajo en clase — Joseph De La Rans</title>
 </head>
 <body>
+    <!-- Ahora generaré el contenidop del anterior proyecto por medio de javascript.
+    acá solo dejaré los id del navbar, el del link al js y el contenedor principal
+     que tendrá todas lad funciones que se pidieron en el onedrive  -->
 
-<!-- ① BARRA DE NAVEGACIÓN  -->
-<nav>
-    <a href="#">Inicio</a> |
-    <a href="#">Servicios</a> |
-    <a href="#">Portafolio</a> |
-    <a href="#">Contacto</a>
-</nav>
-
-<hr>
-
-<!-- ② TABLA -->
-<h2>Tabla de datos</h2>
-<table border="1" cellpadding="6" cellspacing="0">
-    <thead>
-    <tr>
-        <th>#</th>
-        <th>Nombre</th>
-        <th>Ciudad</th>
-        <th>Rol</th>
-        <th>Estado</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr><td>1</td><td>Joseph De La Rans</td><td>Baranoa</td><td>Ingeniero</td><td>Activo</td></tr>
-    <tr><td>2</td><td>Oscar Llanos</td><td>Galán</td><td>Jugador de LoL</td><td>Activo</td></tr>
-    <tr><td>3</td><td>Nelson Sierra</td><td>Soledad</td><td>Jugador de brawl stars</td><td>Activo</td></tr>
-    <tr><td>4</td><td>Carlos Ruiz</td><td>Lima</td><td>DevOps</td><td>Activo</td></tr>
-    </tbody>
-</table>
-
-<hr>
-
-<!-- ③ ELEMENTO EXTERNO INCRUSTADO -->
-<h2>Elemento externo incrustado</h2>
-<iframe
-        src="https://www.openstreetmap.org/export/embed.html?bbox=-74.08%2C4.59%2C-74.06%2C4.61&layer=mapnik"
-        width="600"
-        height="300"
-        title="Mapa OpenStreetMap">
-</iframe>
-
-<hr>
-
-<!-- ④ FORMULARIO -->
-<h2>Formulario de contacto</h2>
-<form>
-    <label>Nombre: <input type="text" placeholder="Tu nombre"></label><br><br>
-    <label>Correo: <input type="email" placeholder="correo@ejemplo.com"></label><br><br>
-    <label>Teléfono: <input type="tel" placeholder="+57 300 000 0000"></label><br><br>
-    <label>Asunto:
-        <select>
-            <option>Consulta general</option>
-            <option>Soporte técnico</option>
-            <option>Presupuesto</option>
-        </select>
-    </label><br><br>
-    <label>Mensaje:<br>
-        <textarea rows="4" cols="40" placeholder="Escribe tu mensaje aquí..."></textarea>
-    </label><br><br>
-    <button type="submit">Enviar mensaje</button>
-</form>
-
-<hr>
-
-<!-- ⑤ MULTIMEDIA -->
-<h2>Elemento multimedia</h2>
-<iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/m0BFZkPsoWY"
-        title="YouTube video player"
-        frameborder="0"
-        allowfullscreen></iframe>
-
-<hr>
-
-<!-- ⑥ COMBINACIÓN DE ELEMENTOS -->
-<h2>Combinación de elementos</h2>
-<figure>
-    <img src="https://imgs.search.brave.com/IGMgkl-snzGwDbOHyT8izDqdFdQKQ4std6ztwANLY5I/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy90/aHVtYi82LzYyL0dv/c2xpbmdCRkkwODEy/MjNfJTI4MjJfb2Zf/MzAlMjlfJTI4NTMz/ODgxNTczNDclMjlf/JTI4Y3JvcHBlZCUy/OS5qcGcvNTEycHgt/R29zbGluZ0JGSTA4/MTIyM18lMjgyMl9v/Zl8zMCUyOV8lMjg1/MzM4ODE1NzM0NyUy/OV8lMjhjcm9wcGVk/JTI5LmpwZw" alt="Foto de perfil" width="100">
-    <figcaption>Joseph De La Rans — Estudiante de ingenieria</figcaption>
-</figure>
-<p>BLablablablabalbalabla.</p>
-<ul>
-    <li>HTML</li>
-    <li>CSS</li>
-    <li>JavaScript</li>
-    <li>React</li>
-</ul>
-<blockquote>
-    "Una vez me comi un pan" — Joseph De La Rans
-</blockquote>
-
+    <!-- Barra de navegación -->
+    <nav id="navbar"></nav>
+ 
+    <hr>
+ 
+    <!-- Contenedor principal: el que gestiona todo lo que trae la pagina ahora  -->
+    <main id="app"></main>
+ 
+    <!-- Script con toda la logica -->
+    <script src="main.js"></script>
+ 
 </body>
 </html>
